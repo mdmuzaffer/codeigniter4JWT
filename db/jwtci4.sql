@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 30, 2021 at 07:59 AM
+-- Generation Time: Feb 13, 2021 at 09:13 AM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 7.4.13
 
@@ -51,7 +51,9 @@ INSERT INTO `client` (`id`, `name`, `email`, `retainer_fee`, `updated_at`, `crea
 (8, 'Sadye O\'Keefe', 'shanahan.candice@yahoo.com', 30485927, NULL, '2021-01-21 23:15:55'),
 (9, 'Lurline Flatley', 'stehr.kayli@kiehn.com', 77401423, NULL, '2021-01-21 23:15:55'),
 (10, 'Charles Jacobi', 'ratke.josianne@gmail.com', 74484634, NULL, '2021-01-21 23:15:55'),
-(11, 'test', 'test@gmail.com', 889654, NULL, '2021-01-22 00:38:09');
+(13, 'Test', 'test71@gmail.com', 8896541, NULL, '2021-02-13 13:25:09'),
+(17, 'Test', 'Anish171@gmail.com', 88478952, NULL, '2021-02-13 13:34:14'),
+(23, 'Test', 'Apyteh17@gmail.com', 8847894, NULL, '2021-02-13 13:34:55');
 
 -- --------------------------------------------------------
 
@@ -98,7 +100,9 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`id`, `name`, `email`, `password`, `updated_at`, `created_at`) VALUES
 (1, 'muzaffer', 'muzaffer@gmail.com', '$2y$10$ivEusZv1gjMvjfJ9EXMry.vEDBATu5pb2..usBoYx9ahOLWybl/0e', NULL, '2021-01-21 23:46:47'),
-(2, 'Mdmuzaffer', 'muzaffer12@gmail.com', '$2y$10$FOC9GFI4NtC.f2HKylWKPeaMN0dYUMTy4szzGDgt1zu5RlpqnokGe', NULL, '2021-01-22 00:18:04');
+(2, 'Mdmuzaffer', 'muzaffer12@gmail.com', '$2y$10$FOC9GFI4NtC.f2HKylWKPeaMN0dYUMTy4szzGDgt1zu5RlpqnokGe', NULL, '2021-01-22 00:18:04'),
+(3, 'Muzaffer', 'muzaffer121@gmail.com', '$2y$10$F2OahOBrFSVxvkHENqjXj.a9bXvIgd7K2NxvPxImEMi6ADj2EnLSq', NULL, '2021-02-13 11:12:19'),
+(4, 'Muzaffer', 'muzaffer10@gmail.com', '$2y$10$D5j73xod.eSO48zT6zKQ..6yqk8ffvmlvDDNxKVoecocvJQekgXWi', NULL, '2021-02-13 11:17:25');
 
 --
 -- Indexes for dumped tables
@@ -134,7 +138,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `client`
 --
 ALTER TABLE `client`
-  MODIFY `id` int(5) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(5) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT for table `migrations`
@@ -146,7 +150,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(5) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(5) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

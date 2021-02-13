@@ -107,4 +107,9 @@ $input = $this->getRequestInput($this->request);
                 );
         }
     }
+
+    public function test1(){
+        echo "Hello this is the for test Auth!";
+    }
+
 }

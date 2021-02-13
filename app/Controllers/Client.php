@@ -89,15 +89,12 @@ class Client extends BaseController
 	//update record
 	public function update($id)
     {
+
         try {
 
             $model = new ClientModel();
             $model->findClientById($id);
-
-          $input = $this->getRequestInput($this->request);
-
-          
-
+            $input = $this->getRequestInput($this->request);
             $model->update($id, $input);
             $client = $model->findClientById($id);
 
@@ -143,6 +140,10 @@ class Client extends BaseController
                 ResponseInterface::HTTP_NOT_FOUND
             );
         }
+    }
+
+    public function test(){
+        echo "Hello this is the for test for client !";
     }
 
 	
